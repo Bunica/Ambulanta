@@ -1,0 +1,486 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --navbar: #ffd639;
+  --header: #1e569e;
+  --main: #16425b;
+  --light: #bddae2;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  line-height: 1.4;
+  color: white;
+  background-color: #1e569e;
+  font-size: 1.2rem;
+  font-family: "Roboto", sans-serif;
+  font-family: "Libre Franklin", sans-serif;
+}
+
+/*Start navigation styling */
+.navbar {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--navbar);
+  color: var(--main);
+}
+
+.brand-title {
+  margin: 0rem 2rem;
+}
+
+.navbar-links {
+  height: 100%;
+}
+
+.navbar-links ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  display: block;
+  text-decoration: none;
+  color: var(--main);
+  padding: 1rem;
+}
+
+.navbar-links li:hover {
+  background-color: rgb(255, 255, 251);
+}
+
+.toggle-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .toggle-button {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar-links ul li {
+    text-align: center;
+  }
+
+  .navbar-links ul li a {
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+}
+
+/*End navigation styling */
+
+/*Start Header styling */
+header {
+  text-align: center;
+  background-color: rgba(30, 85, 156, 0.616);
+  padding-bottom: 2.5rem;
+  font-family: "Roboto", sans-serif;
+  background-image: linear-gradient(
+      rgba(30, 85, 156, 0.808),
+      rgba(30, 85, 156, 0.795)
+    ),
+    url("Imagini/amb-creion.jpg");
+  background-position: center;
+}
+
+.banner {
+  margin-top: 100px;
+  border-radius: 10px;
+}
+
+.buton-tlf {
+  background-color: var(--navbar);
+  display: inline-block;
+  padding: 10px;
+  border-radius: 15px 7px 15px 7px;
+  margin: 20px;
+  text-decoration: none;
+  color: var(--main);
+}
+
+.buton-tlf:hover {
+  color: white;
+  border-color: var(--navbar);
+  background-color: rgb(35, 134, 35);
+  transition: ease-in-out 0.3s;
+}
+
+.buton-email {
+  display: block;
+  color: var(--main);
+  background-color: var(--navbar);
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 15px 7px 15px 7px;
+  text-decoration: none;
+}
+
+.buton-email:hover {
+  color: white;
+  border-color: var(--navbar);
+  background-color: rgb(35, 134, 35);
+  transition: ease-in-out 0.3s;
+}
+/*End Header styling */
+
+/*Start Main styling */
+
+main {
+  background-color: #16425b;
+  padding: 0 3rem;
+  color: rgb(245, 244, 244);
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+  text-align: center;
+}
+
+main p {
+  text-align: left;
+}
+/*End Main styling */
+
+/*Individual tags*/
+h1 {
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
+}
+
+h2 {
+  font-size: 1.7rem;
+  font-family: "Roboto", sans-serif;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.icon-style {
+  color: white;
+}
+/*Individual tags*/
+
+/*Start Main styling */
+.continut p {
+  margin-top: 1rem;
+}
+
+table,
+td,
+th {
+  border-top: 1px solid #c4dcf3;
+  border-bottom: 1px solid #c4dcf3;
+  border-collapse: collapse;
+  padding: 1rem;
+  width: 100%;
+}
+
+tr {
+  text-align: left;
+  background: #eef7ff;
+}
+tfoot {
+  text-align: left;
+}
+
+th {
+  background: #427fef;
+  color: white;
+}
+td {
+  font-weight: 500;
+}
+
+tr:nth-child(odd) {
+  background: #eef7ff;
+}
+
+.informatii {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-box {
+  border: 2px solid #ffd639;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: var(--navbar);
+  width: 33%;
+  color: #16425b;
+}
+
+.flex-box li {
+  list-style-type: disc;
+  margin-left: 20px;
+  text-align: left;
+}
+
+.flex-box h3 {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.contact a {
+  display: block;
+  text-decoration: none;
+  word-wrap: break-word;
+}
+
+.contact a:hover {
+  transition: ease-in-out 0.3s;
+  cursor: pointer;
+  color: white;
+}
+
+.contact img {
+  margin-right: 5px;
+}
+
+.contact a:hover img {
+  transform: scale(1.5);
+  transition: ease-in-out 0.3s;
+}
+
+.border-b {
+  border-bottom: 3px solid rgb(255, 214, 57);
+  width: fit-content;
+  margin: 0px auto 20px auto;
+  padding-top: 20px;
+}
+
+/*End Main styling */
+
+/*Start Slider stiling*/
+
+.responsive-slider {
+  background-color: var(--header);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide-btn {
+  position: relative;
+  display: block;
+  width: 500px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.slide-btn:before,
+.slide-btn:after {
+  content: "⥪";
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  z-index: 2;
+  width: 2rem;
+  height: 2rem;
+  background: dodgerblue;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+}
+
+.slide-btn:after {
+  content: "⥭";
+  left: auto;
+  right: 1rem;
+}
+
+/* I haven't found a way for IE and Edge to let me style inputs that way */
+input {
+  appearance: none;
+  -ms-appearance: none;
+  -webkit-appearance: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transform: translateX(100%);
+  transition: transform ease-in-out 400ms;
+  z-index: 1;
+}
+
+input:focus {
+  outline: none;
+}
+
+input:after {
+  content: attr(title);
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+input:not(checked):before {
+  content: "";
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  top: 50%;
+  left: calc(-100% + 1rem);
+}
+
+input:checked:before {
+  display: none;
+  left: 1rem;
+}
+
+input:checked {
+  transform: translateX(0);
+  z-index: 0;
+  box-shadow: -5px 10px 20px -15px rgba(0, 0, 0, 1);
+}
+
+input:checked + input:before {
+  left: -3rem;
+}
+
+input:checked + input ~ input:before {
+  display: none;
+}
+
+/*Start footer styling*/
+footer {
+  height: 20vh;
+  text-align: center;
+  background-color: var(--main);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: 3px solid var(--navbar);
+}
+
+footer p {
+  margin: 0;
+}
+
+footer a {
+  text-decoration: none;
+  color: #ffd639;
+}
+/*End footer styling*/
+
+/* MEDIA QUERIS*/
+@media screen and (max-width: 768px) {
+  .informatii {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .flex-box {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .toggle-button {
+    display: flex;
+  }
+
+  .nav-links {
+    width: 100%;
+    display: none;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .nav-links li {
+    display: block;
+    text-align: center;
+  }
+
+  .nav-links li a {
+    padding: 0.5rem 1rem;
+    margin: 0;
+    border-radius: 0px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .flex-box {
+    padding: 0;
+  }
+}
+
+/* END MEDIA QUERIS*/
