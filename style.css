@@ -432,7 +432,7 @@ footer a {
 /*End footer styling*/
 
 /* MEDIA QUERIS*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 950px) {
   .informatii {
     display: flex;
     flex-direction: column;
