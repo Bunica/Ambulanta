@@ -130,6 +130,7 @@ header {
     ),
     url("Imagini/amb-creion.jpg");
   background-position: center;
+  background-size: cover;
 }
 
 .banner {
@@ -414,6 +415,11 @@ input:checked + input ~ input:before {
 .detalii-companie {
   text-align: center;
   margin-bottom: 1rem;
+}
+
+.detalii-companie div a {
+  text-decoration: underline;
+  color: white;
 }
 
 /*Start footer styling*/
